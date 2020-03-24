@@ -24,23 +24,24 @@ one of them will occupy the video camera. And the second one will not permited t
 B. If you want install novakid-kurento-client to your computer you need:
 
 1. Install nodejs and yarn
-
+```
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs gcc g++ make
 
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install yarn
-
+```
 2. Download client, make tmp directory and install client.
-
+```
 git clone https://github.com/avssav/novakid-kurento-client
 mkdir -p /srv/novakid-records 
 cd novakid-kurento-client
 npm install
-
+```
 3. Make systemd init script (We use Ubuntu 16.04):
 
+```
 echo "
 [Unit]
 Description=One-to-one video call using WebRTC technology
@@ -60,13 +61,14 @@ RestartSec=10s
 [Install]
 WantedBy=multi-user.target
 " | sudo tee /etc/systemd/system/novakid-kurento-client.service
+```
 
 4. Enable, run and check it.
-
+```
 sudo systemctl enable novakid-kurento-client.service
 sudo systemctl start novakid-kurento-client.service
 sudo systemctl status novakid-kurento-client.service
-
+```
 5. Open client on your computer (with SSL errors):
 
 For example: https://192.168.2.3:8899/
