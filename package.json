@@ -1,0 +1,21 @@
+{
+  "name": "novakid-kurento-client",
+  "version": "6.13.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.js --ws_uri=wss://test.novakidschool.com:8433/kurento --syslog=0 --ssl=1 --hostname=192.168.2.182",
+    "test2": "node app.js --ws_uri=wss://test.novakidschool.com:8433/kurento --syslog=0 --ssl=1 --hostname=192.168.1.2"
+  },
+  "dependencies": {
+    "ain2": "2.0.0",
+    "express": "^4.17.0",
+    "kurento-client": "Kurento/kurento-client-js",
+    "minimist": "^1.1.1",
+    "socket.io": "2.3.0",
+    "ws": "^7.1.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8"
+  }
+}

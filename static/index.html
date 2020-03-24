@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Novakid - Kurento monitoring</title>
+
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.css" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">Kurento monitoring</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar" aria-controls="topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="topnavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#anchorStatusResponsePipelines">Piplines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#anchorStatusResponseModules">Modules</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/test.html">Test call</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="mt-3">
+        <h3><a id="anchorStatusResponsePipelines" href="#anchorStatusResponsePipelines">Piplines [<span id="anchorStatusResponsePipelinesCount">N/A</span>]</a></h3>
+        <div class="row">
+          <div class="col">
+            <div id="statusResponsePipelines">
+              <div class="alert alert-primary">Waiting...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-3">
+        <h3><a id="anchorStatusResponseModules" href="#anchorStatusResponseModules">Modules [<span id="anchorStatusResponseModulesCount">N/A</span>]</a></h3>
+        <div class="row">
+          <div class="col">
+            <div id="statusResponseModules">
+              <div class="alert alert-primary">Waiting...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-jsonview/1.2.3/jquery.jsonview.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

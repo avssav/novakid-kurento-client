@@ -1,0 +1,8 @@
+{
+  "name": "Novakid",
+  "description": "Novakid kurento client",
+  "repository": "",
+  "logo": "",
+  "keywords": ["novakid", "nodejs", "saas"],
+  "image": "heroku/nodejs"
+}
