@@ -1,6 +1,6 @@
 {
   "name": "novakid-kurento-client",
-  "version": "6.13.0",
+  "version": "6.13.1",
   "private": true,
   "scripts": {
     "start": "node app.js",
